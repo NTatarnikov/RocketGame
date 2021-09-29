@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		11A457C627044260002E4F1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A457C527044260002E4F1A /* AppDelegate.swift */; };
 		11A457C827044260002E4F1A /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 11A457C727044260002E4F1A /* GameScene.sks */; };
-		11A457CA27044260002E4F1A /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 11A457C927044260002E4F1A /* Actions.sks */; };
 		11A457CC27044260002E4F1A /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A457CB27044260002E4F1A /* GameScene.swift */; };
 		11A457CE27044260002E4F1A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A457CD27044260002E4F1A /* GameViewController.swift */; };
 		11A457D127044260002E4F1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A457CF27044260002E4F1A /* Main.storyboard */; };
 		11A457D327044261002E4F1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11A457D227044261002E4F1A /* Assets.xcassets */; };
+		11A457DC270442D8002E4F1A /* explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 11A457DA270442D8002E4F1A /* explosion.sks */; };
+		11A457DD270442D8002E4F1A /* starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = 11A457DB270442D8002E4F1A /* starfield.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11A457C227044260002E4F1A /* RocketGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RocketGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A457C527044260002E4F1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11A457C727044260002E4F1A /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		11A457C927044260002E4F1A /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		11A457CB27044260002E4F1A /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		11A457CD27044260002E4F1A /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		11A457D027044260002E4F1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11A457D227044261002E4F1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11A457D427044261002E4F1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11A457DA270442D8002E4F1A /* explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = explosion.sks; sourceTree = "<group>"; };
+		11A457DB270442D8002E4F1A /* starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = starfield.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +62,13 @@
 			children = (
 				11A457C527044260002E4F1A /* AppDelegate.swift */,
 				11A457C727044260002E4F1A /* GameScene.sks */,
-				11A457C927044260002E4F1A /* Actions.sks */,
 				11A457CB27044260002E4F1A /* GameScene.swift */,
 				11A457CD27044260002E4F1A /* GameViewController.swift */,
 				11A457CF27044260002E4F1A /* Main.storyboard */,
 				11A457D227044261002E4F1A /* Assets.xcassets */,
 				11A457D427044261002E4F1A /* Info.plist */,
+				11A457DA270442D8002E4F1A /* explosion.sks */,
+				11A457DB270442D8002E4F1A /* starfield.sks */,
 			);
 			path = RocketGame;
 			sourceTree = "<group>";
@@ -130,7 +133,8 @@
 				11A457D127044260002E4F1A /* Main.storyboard in Resources */,
 				11A457C827044260002E4F1A /* GameScene.sks in Resources */,
 				11A457D327044261002E4F1A /* Assets.xcassets in Resources */,
-				11A457CA27044260002E4F1A /* Actions.sks in Resources */,
+				11A457DC270442D8002E4F1A /* explosion.sks in Resources */,
+				11A457DD270442D8002E4F1A /* starfield.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +296,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = NikitaTatarnikov.RocketGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -311,7 +315,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = NikitaTatarnikov.RocketGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
